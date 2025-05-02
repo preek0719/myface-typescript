@@ -7,9 +7,12 @@
     <% postList.results.forEach(function(post) {%>
         <li>
             <%= post.message %> - <%= format(post.createdAt, "yyyy-MM-dd HH:mm:ss") %>
+            <img src="<%=post.imageUrl %>" alt = "Placeholder image description"> - <%= post.userId %>
+             
         </li>
     <% }); %>
 </ol>
+<%- include('create_post') -%>
 </body>
 <%- include('_footer') -%>
 </html>
