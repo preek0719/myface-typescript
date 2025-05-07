@@ -1,0 +1,33 @@
+@media only screen and (max-width: 375px) {
+    label {
+        display: flex;
+    }
+
+    input {
+        display: flex;
+        
+        margin-left: 10px;
+        margin-bottom: 10px;
+
+    
+    }
+}
+
+@media only screen and (max-width: 750px) and (min-width: 375px)  {
+    h1.createPost {
+        margin-top: 48px;
+    }
+    label {
+        display: flex;
+    }
+
+    input {
+        display: flex;
+        
+        margin-left: 10px;
+        margin-bottom: 10px;
+
+    
+    }
+}
+    

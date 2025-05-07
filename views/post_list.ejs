@@ -2,17 +2,29 @@
 <%- include('_head') -%>
 <%- include('_header') -%>
 <body>
-<h1>Posts</h1>
-<ol>
+<h1 >Posts</h1>
+<ul class="list-of-posts">
     <% postList.results.forEach(function(post) {%>
-        <li>
-            <%= post.message %> - <%= format(post.createdAt, "yyyy-MM-dd HH:mm:ss") %>
-            <img src="<%=post.imageUrl %>" alt = "Placeholder image description"> - <%= post.userId %>
+        <li class="postList">           
+               
+            <img class = "postimages" src="<%=post.imageUrl %>" alt = "Placeholder image description"> 
+            <p class= "postMessage" ><%= post.message %></p> 
+            <p class= "postDate"> <%= format(post.createdAt, "yyyy-MM-dd HH:mm:ss") %></p>  
+            <div class="likes_dislikes">   
+            <form class="like-form" method="post" action="/posts/<%= post.id %>/like/"> <button class="like-button" type="submit">Like</button> </form>
+          <!--  <p id="like-text" ><% post.likedBy.length %> likes </p> --> 
+             <form class="dislike-form" method="post" action="/posts/<%= post.id %>/dislike/"> <button type="submit">Dislike</button> </form> 
+          <!--     <p id="dislike-text"><%= post.dislikedBy.length %> dislikes</p> -->
+             </div>
              
+
+            
+                        
         </li>
     <% }); %>
-</ol>
+</ul>
 <%- include('create_post') -%>
+
 </body>
 <%- include('_footer') -%>
 </html>
