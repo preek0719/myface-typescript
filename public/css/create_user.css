@@ -1,0 +1,90 @@
+
+h1#createNewUser {
+    margin-top: 48px;
+}
+.createUserLabel {
+    width:100%;
+    display: grid;
+    position: relative;
+    grid-gap: 1px;
+    justify-content: left;
+    margin-bottom: 24px;
+    height: 30px;
+    align-items: center;
+  }
+#name {
+    width: 100%;
+    grid-column: 1;
+    grid-row: 1;
+}
+#nameInput {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 1;
+}
+#userName {
+    width: 100%;
+    grid-column: 1;
+    grid-row: 2;
+}
+#userNameInput {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 2;
+}
+#email {
+    width: 100%;
+    grid-column: 1;
+    grid-row: 3;
+}
+#emailInput {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 3;
+}
+#profileImageUrl {
+    width: 100%;
+    grid-column: 1;
+    grid-row: 4;
+}
+#profileImageUrlInput {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 4;
+}
+#coverImageUrl {
+    width: 100%;
+    grid-column: 1;
+    grid-row: 5;
+}
+#coverImageUrlInput {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.createUserLabel input {
+    height: 25px;
+}
+
+
+@media only screen and (max-width: 375px) {
+    .createUserLabel {
+        grid-template-columns: 130px 150px;
+      }
+}
+
+@media only screen and (max-width: 750px) and (min-width: 375px)  {
+    .createUserLabel {
+        grid-template-columns: 150px 200px;
+      }
+}
+
+@media only screen and (min-width: 750px) {
+    .createUserLabel {
+        grid-template-columns: 150px 300px;
+      }
+}
+
+
+

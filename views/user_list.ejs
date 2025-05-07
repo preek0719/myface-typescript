@@ -3,18 +3,19 @@
 <%- include('_header') -%>
 <body>
 <h1>Users</h1>
-<ol>
+<ul class="list-of-users">
     <% results.forEach(function(user) {%>
-        <li>
-            <%= user.name %>
+        <li class="userList">
+            <img class = "profilePicture" src="<%=user.profileImageUrl %>" alt = "Profile picture of user"> 
+            <p class="userName"> <%= user.username %> </p>
         </li>
     <% }); %>
-</ol>
+</ul>
 <%if (next) { %>
-    <a href="<%= next %>">Next</a>
+    <button><a class="nextButton" href="<%= next %>">Next</a></button>
 <% } %>
 <%if (previous) { %>
-    <a href="<%= previous %>">Previous</a>
+    <button><a class="previousButton" href="<%= previous %>">Previous</a></button>
 <% } %>
 <%- include('create_user') -%>
 </body>

@@ -1,0 +1,53 @@
+.list-of-users {
+    list-style: none;
+    background-color: #252A38;
+    color: #DCDCDC;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 32px;
+}
+
+.userList {
+    background-color: #151820;
+}
+
+.profilePicture {
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.userName {
+    width: 100%;
+    text-align: left;
+}
+
+.nextButton,.previousButton {
+    color: #DCDCDC;
+}
+
+a.nextButton:hover,a.previousButton:hover{
+    color: #DCDCDC;
+}
+
+@media only screen and (min-width: 750px) {
+    .userList {
+        flex-basis: 20%;
+    }
+}
+
+@media only screen and (max-width: 750px) and (min-width: 375px) {
+    .userList {
+        flex-basis: 40%;
+    }
+}
+
+
+@media only screen and (max-width: 375px) {  
+    .userList {
+        flex-basis: 80%;
+    }
+
+}

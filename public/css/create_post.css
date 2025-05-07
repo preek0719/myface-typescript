@@ -1,0 +1,53 @@
+h1.createPost {
+    margin-top: 48px;
+}
+
+.createNewPost {
+    width:80%;
+    display: grid;
+    position: relative;
+    grid-gap: 1px;
+    justify-content: left;
+    margin-bottom: 24px;
+    height: 30px;
+    align-items: center;
+  }
+#postMessage {
+    width: 100%;
+    grid-column: 1;
+    grid-row: 1;
+}
+#postMessageInput {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 1;
+}
+#imageUrl {
+    width: 100%;
+    grid-column: 1;
+    grid-row: 2;
+}
+#imageUrlInput {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+
+
+@media only screen and (max-width: 375px) {
+    .createNewPost {
+        grid-template-columns: 130px 150px;
+      }
+}
+@media only screen and (max-width: 750px) and (min-width: 375px)  {
+    .createNewPost {
+        grid-template-columns: 150px 200px;
+      }
+}
+
+@media only screen and (min-width: 750px) {
+    .createNewPost {
+        grid-template-columns: 150px 300px;
+      }
+}
