@@ -1,0 +1,49 @@
+@media only screen and (max-width: 375px) {
+    .menu {
+        width: 50px; /* update this to control the size */
+        border: none;        
+        aspect-ratio: 1;
+        background:
+         radial-gradient(closest-side at 12.5% 25%,#000 96%,#0000) 0 0/80% 40%,
+         linear-gradient(#000 50%,#dcdcdc 0) top/80% 40% repeat-y;
+         float: right;
+         /* display: none;  */
+    }
+
+    .postLinkOpen {
+       /* list-style: none; */
+       visibility: visible;
+        display: inline ;
+    }
+
+    .userLinkOpen {
+        /* list-style: none; */
+        visibility: visible;
+        display: inline ;
+    }
+
+    .postLinkClose {
+        /* list-style: none; */
+        display: none;
+    }
+
+    .userLinkClose {
+        /* list-style: none; */
+        display: none;
+    }
+
+   
+
+ 
+
+}
+@media only screen and (max-width: 750px) and (min-width: 375px)  {
+    .menu {
+        border: none; 
+    }
+}
+@media only screen and (min-width: 750px) {
+    .menu {
+        border: none; 
+    }
+}

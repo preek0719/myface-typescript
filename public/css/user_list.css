@@ -32,19 +32,21 @@ a.nextButton:hover,a.previousButton:hover{
     color: #DCDCDC;
 }
 
+/* full screen */
 @media only screen and (min-width: 750px) {
     .userList {
         flex-basis: 20%;
     }
 }
 
+/* tablet view */
 @media only screen and (max-width: 750px) and (min-width: 375px) {
     .userList {
         flex-basis: 40%;
     }
 }
 
-
+/* mobile view */
 @media only screen and (max-width: 375px) {  
     .userList {
         flex-basis: 80%;

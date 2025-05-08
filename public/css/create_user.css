@@ -6,6 +6,7 @@ h1#createNewUser {
     width:100%;
     display: grid;
     position: relative;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 1px;
     justify-content: left;
     margin-bottom: 24px;
@@ -67,12 +68,13 @@ h1#createNewUser {
     height: 25px;
 }
 
-
-@media only screen and (max-width: 375px) {
+/* mobile view */
+/* @media only screen and (max-width: 375px) {
     .createUserLabel {
         grid-template-columns: 130px 150px;
       }
 }
+
 
 @media only screen and (max-width: 750px) and (min-width: 375px)  {
     .createUserLabel {
@@ -80,11 +82,12 @@ h1#createNewUser {
       }
 }
 
+
 @media only screen and (min-width: 750px) {
     .createUserLabel {
         grid-template-columns: 150px 300px;
       }
-}
+} */
 
 
 

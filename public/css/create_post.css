@@ -7,6 +7,7 @@ h1.createPost {
     display: grid;
     position: relative;
     grid-gap: 1px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-content: left;
     margin-bottom: 24px;
     height: 30px;
@@ -35,11 +36,15 @@ h1.createPost {
 
 
 
-@media only screen and (max-width: 375px) {
+/* @media only screen and (max-width: 375px) {
     .createNewPost {
-        grid-template-columns: 130px 150px;
+         grid-template-columns: 130px 150px; 
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        
       }
 }
+
+
 @media only screen and (max-width: 750px) and (min-width: 375px)  {
     .createNewPost {
         grid-template-columns: 150px 200px;
@@ -50,4 +55,4 @@ h1.createPost {
     .createNewPost {
         grid-template-columns: 150px 300px;
       }
-}
+} */

@@ -1,3 +1,4 @@
+/* mobile view */
 @media only screen and (max-width: 375px) {  
     header {
         background-color: #151820;
@@ -84,7 +85,7 @@
         color: #dcdcdc;
     }
     button:hover {
-        background-color;: #2985FF
+        background-color: #2985FF;
     }
     #like-text {
         position: relative;
@@ -106,7 +107,8 @@
         padding-left:0;
     }
 }
-   /*medium size */
+
+   /*tablet view */
 @media only screen and (max-width: 750px) and (min-width: 375px) {
     header {
         background-color: #151820;
@@ -218,7 +220,7 @@
     }
 }
 
-/* large screen */
+/* full size */
 @media only screen and (min-width: 750px) {
     header {
         background-color: #151820;
