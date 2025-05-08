@@ -1,49 +1,79 @@
-@media only screen and (max-width: 375px) {
-    .menu {
-        width: 50px; /* update this to control the size */
-        border: none;        
-        aspect-ratio: 1;
-        background:
-         radial-gradient(closest-side at 12.5% 25%,#000 96%,#0000) 0 0/80% 40%,
-         linear-gradient(#000 50%,#dcdcdc 0) top/80% 40% repeat-y;
-         float: right;
-         /* display: none;  */
-    }
-
-    .postLinkOpen {
-       /* list-style: none; */
-       visibility: visible;
-        display: inline ;
-    }
-
-    .userLinkOpen {
-        /* list-style: none; */
-        visibility: visible;
-        display: inline ;
-    }
-
-    .postLinkClose {
-        /* list-style: none; */
-        display: none;
-    }
-
-    .userLinkClose {
-        /* list-style: none; */
-        display: none;
-    }
-
-   
-
- 
-
+.menu {
+    width: 50px;
+    border: none;
+    aspect-ratio: 1;
+    background:
+        radial-gradient(closest-side at 12.5% 25%, #000 96%, #0000) 0 0/80% 40%,
+        linear-gradient(#000 50%, #dcdcdc 0) top/80% 40% repeat-y;
+    /* to place at top right corner     */
+    top: 1rem; 
+    right: 1rem;
+    /* to not disappear while scrolling */
+    position: fixed;
+    /* to make sure it stays above every other element */
+    z-index: 100;
+    cursor: pointer;
 }
-@media only screen and (max-width: 750px) and (min-width: 375px)  {
+
+.menuArea {
+    position: fixed;
+    /* to hide the menu by default above the screen */
+    transform: translateY(-100%); 
+    transition: transform 0.2s;
+    /* top, right, left, bottom values to make it cover the whole screen */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: black;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+}
+
+.showMenu {
+    /* for the menu to slide and cover the whole screen */
+    transform: translateY(0);
+}
+
+#postLink {
+   padding: 10px 10px 10px 10px
+}
+
+#userLink {
+    padding: 10px 10px 10px 10px
+ }
+
+/* .postLinkOpen {
+    visibility: visible;
+    display: inline;
+}
+
+.userLinkOpen {
+    visibility: visible;
+    display: inline;
+}
+
+.postLinkClose {
+    display: none;
+}
+
+.userLinkClose {
+    display: none;
+} */
+
+
+/* @media only screen and (max-width: 750px) and (min-width: 375px) {
     .menu {
-        border: none; 
+        display: none;
+        border: none;
     }
 }
+
 @media only screen and (min-width: 750px) {
     .menu {
-        border: none; 
+        display: none;
+        border: none;
     }
-}
+} */

@@ -1,24 +1,12 @@
 <header>
   <nav>
-    <script>
-  
-      const displayLinks = function () {
-        console.log("in event listener");
-        if (postLink.style.display === "inline" && userLink.style.display === "inline") {
-          console.log("display none")
-          postLink.style.display = "none";
-          userLink.style.display = "none";
-        }
-        else {
-          console.log("display inline")
-          postLink.style.display = "inline";
-          userLink.style.display = "inline";
-        }
-      }
-    </script>
-    <a id='postLink' class="postLinkClose" href="/posts">Posts</a>
-    <a id='userLink' class="userLinkClose" href="/users">Users</a>
 
-    <button id="menuButton" class="menu" type="submit" onclick="displayLinks()"></button>
+    <button id="menuButton" class="menu" type="submit"></button>
+    <ul class="menuArea">
+    <!-- <li> <a id='postLink' class="postLinkClose" href="/posts">Posts</a> </li>
+   <li><a id='userLink' class="userLinkClose" href="/users">Users</a> </li> -->
+      <li> <a id='postLink' class="menuItem" href="/posts">Posts</a> </li>
+      <li><a id='userLink' class="menuItem" href="/users">Users</a> </li>
+    </ul>
   </nav>
 </header>
