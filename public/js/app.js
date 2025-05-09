@@ -17,12 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // menu.addEventListener("click", function () {
   //   if ((postLink.classList.contains('postLinkClose')) && (userLink.classList.contains('userLinkClose'))) {
-  //     // console.log('inside if')
+  //      console.log('inside if')
   //     postLink.classList.replace("postLinkClose", "postLinkOpen");
   //     userLink.classList.replace("userLinkClose", "userLinkOpen");
   //   }
   //   else {
-  //     // console.log('inside else')
+  //      console.log('inside else')
   //     postLink.classList.replace("postLinkOpen", "postLinkClose");
   //     userLink.classList.replace("userLinkOpen", "userLinkClose");
   //   }
@@ -77,5 +77,23 @@ document.addEventListener('click', function (e) {
     // menuIcon.style.display = "block";
     }
   });
+
+let userNameInput = document.getElementById("userNameInput");
+userNameInput.addEventListener("input", function(e){
+  userNameInput.setCustomValidity('');//remove message when new text is input
+});
+userNameInput.addEventListener("invalid", function(e){
+  userNameInput.setCustomValidity('Username must consist of lowercase letters only with no spaces');//custom validation message for invalid text
+});
+
+let nameInput = document.getElementById("nameInput");
+nameInput.addEventListener("input", function(e){
+  nameInput.setCustomValidity('');//remove message when new text is input
+});
+nameInput.addEventListener("invalid", function(e){
+  nameInput.setCustomValidity('Name must be letters and spaces only');//custom validation message for invalid text
+});
+
+
   
 });

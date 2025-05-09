@@ -5,26 +5,25 @@
 <form method="post" action="/users/create">
     <label class="createUserLabel">
         <p id="name">Name:</p>
-        <input id="nameInput" type="text" name="name" required/>
+        <input id="nameInput" type="text" name="name" pattern="[a-zA-Z ]+" placeholder="Enter name here" required/>
     </label>
     <label class="createUserLabel">
         <p id="userName">Username:</p>
-        <input id="userNameInput" type="text" name="username" required/>
+        <input id="userNameInput" type="text" name="username" pattern ="[a-z]+" placeholder="Enter a user name" required/>
     </label>
     <label class="createUserLabel">
         <p id="email">Email:</p>
-        <input id="emailInput" type="email" name="email" required/>
+        <input id="emailInput" type="email" name="email" placeholder="Enter your email" required/>
     </label>
     <label class="createUserLabel">
-        <p id="profileImageUrl">ProfileImageUrl:</p>
-        <input id="profileImageUrlInput" type="text" name="profileImageUrl" required/>
+        <p id="profileImageUrl">Profile Image Url:</p>
+        <input id="profileImageUrlInput" type="url" name="profileImageUrl" placeholder="Enter URL of your profile image" required/>
     </label>
     <label class="createUserLabel">
-        <p id="coverImageUrl">CoverImageUrl:</p>
-        <input id="coverImageUrlInput" type="text" name="coverImageUrl" required/>
+        <p id="coverImageUrl">Cover Image Url:</p>
+        <input id="coverImageUrlInput" type="url" name="coverImageUrl" placeholder="Enter URL of your cover image" required/>
     </label>
-    <button type="submit">Submit</button>
+    <button class="createUserButton" type="submit" >Submit</button>
 </form>
 </body>
-
 </html>

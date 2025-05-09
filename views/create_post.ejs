@@ -5,14 +5,13 @@
 <form method="post" action="/create/post">
     <label class="createNewPost">
         <p id="postMessage">Post Message:</p>
-        <input id="postMessageInput" type="text" name="message"/>
+        <input id="postMessageInput" type="text" name="message" placeholder="Enter post message" required/>
     </label>
     <label class="createNewPost">
         <p id="imageUrl">Image URL:</p>
-        <input id="imageUrlInput" type="url" name="imageUrl"/>
+        <input id="imageUrlInput" type="url" name="imageUrl" required placeholder="Enter post URL"/>
     </label>
     
     <button type="submit">Submit</button>
 </form>
-
 </html>

@@ -18,6 +18,8 @@ h1#createNewUser {
     grid-column: 1;
     grid-row: 1;
 }
+
+
 #nameInput {
     width: 100%;
     grid-column: 2;
